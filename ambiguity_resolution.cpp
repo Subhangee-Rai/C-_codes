@@ -24,6 +24,7 @@ class C : public A,public B{
     {
         // greetings(); //will create an ambiguity on which greet() to call
         B::greetings();
+        //or else function can be overridden to resolve the amibiguity
         cout<<name;
     }
 };
